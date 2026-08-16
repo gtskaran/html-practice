@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My web page</title>
+    <style>
+        table, td, th {
+            border: 2px solid;
+            border-color: #BB8833;
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+
+        table{
+            margin-left: 2px;
+            margin-top: 2px;
+			width: 80vw;
+        }
+
+        th:hover{
+          color:blue;
+        }
+
+        *{
+          background-color: khaki;
+          color: cornflowerblue;
+        }
+
+        .mystyle{
+          color: crimson;
+        }
+    </style>
+</head>
+<div>
+    <h2 class="mystyle">Welcome to my web page</h2>
+    <a href="secondpage.html">Go to Second page</a>
+
+    <figure>
+      <img src="pic/phenix.JPG" alt="image of phenix" style="width:10vw;height:10vh;">
+      <caption>Image of Phoenix</caption>
+    </figure>
+
+
+    <a href="https://www.google.com" target="_blank">Google</a>
+
+    <h3>Typography</h3>
+    <p>This is paragraph</p>
+    <p><b>bold</b> text</p>
+    <p><i>italics</i> text</p>
+    <p><del>strike through</del> text</p>
+    <p><u>underlined</u> text</p>
+    <p><blockquote>blockquote</blockquote> text</p>
+    <p><abbr title="This is abbreviated text">abbreviated</abbr> text</p>
+    <p><mark>Marked</mark>	Highlights text for reference or relevance (usually yellow background).</p>
+<p>Text <br>with<br> line<br> break</p>
+<p><hr>Horizontal Rule<hr></p>
+<p><time>13:00</time></p>
+<p>Subscript text H<sub>2</sub>O</p>
+<p>Superscript text e = mc<sup>2</sup></p>
+
+<h1>Tables</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Product</th>
+      <th>Quantity</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Standard Widget</td>
+      <td>2</td>
+      <td>$10.00</td>
+    </tr>
+    <tr>
+      <td>Premium Gadget</td>
+      <td>1</td>
+      <td>$25.00</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="2">Total</td>
+      <td>$45.00</td>
+    </tr>
+  </tfoot>
+</table>
+
+
+<h1>Form sample</h1>
+<div style="width: 50vw; text-align: center;">
+<form action="/submit-form" method="POST">
+  <fieldset>
+    <legend>Personal Information</legend>
+    
+    <div class="form-group">
+      <label for="full-name">Full Name:</label>
+      <input type="text" id="full-name" name="full-name" placeholder="John Doe" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="john@example.com" required>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Preferences</legend>
+    
+    <div class="form-group">
+      <label for="topic">Interested In:</label>
+      <select id="topic" name="topic">
+        <option value="web-design">Web Design</option>
+        <option value="development">Development</option>
+        <option value="seo">SEO</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Newsletter:</p>
+      <input type="checkbox" id="subscribe" name="subscribe" checked>
+      <label for="subscribe">Send me weekly updates</label>
+    </div>
+  </fieldset>
+
+  <button type="submit">Submit Registration</button>
+  <button type="reset">Reset form</button>
+  <button type="button" onclick="document.getElementById('full-name').value = 'Dhinesh';">Show</button>
+</form>
+</div>
+
+<form>
+  <div class="form-group">
+    <label for="country">Select Country:</label>
+    <select id="country" name="country">
+      <option value="usa">United States</option>
+      <option value="can">Canada</option>
+      <option value="uk">United Kingdom</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <p><strong>Membership Level:</strong></p>
+    <input type="radio" id="free" name="tier" value="free">
+    <label for="free" style="display:inline;">Free</label><br>
+    
+    <input type="radio" id="pro" name="tier" value="pro">
+    <label for="pro" style="display:inline;">Pro</label>
+  </div>
+
+  <div class="form-group">
+    <label for="bio">Short Biography:</label>
+    <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Tell us about yourself..."></textarea>
+  </div>
+
+  <button type="submit">Save Profile</button>
+</form>
+
+
+</body>
+</html>
